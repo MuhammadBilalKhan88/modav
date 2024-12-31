@@ -80,7 +80,31 @@ body {
     transition: all 0.3s ease;
 
 }
+.category-img-box {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.category-img-box img{
 
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.category-img-box a{
+    position: absolute;
+    background-color: var(--primary-color);
+    border-radius: 99px;
+    padding: 8px 28px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}
  /* Navbar Styling End */
 /* Bannner Carousel Styling */
 /* Bannner Carousel End */
