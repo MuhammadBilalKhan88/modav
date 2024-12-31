@@ -14,7 +14,37 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 <title>Title</title>
+<style>
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+h1{
+    font-weight: 500;
+
+}
+</style>
 </head>
 <body>
 
@@ -29,9 +59,23 @@
 
 
 
+<!--catogry slider start-->
 
+<h1>Explore Collections</h1>
+<swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="4"
+space-between="30" centered-slides="true">
+<swiper-slide>Slide 1</swiper-slide>
+<swiper-slide>Slide 2</swiper-slide>
+<swiper-slide>Slide 3</swiper-slide>
+<swiper-slide>Slide 4</swiper-slide>
+<swiper-slide>Slide 5</swiper-slide>
+<swiper-slide>Slide 6</swiper-slide>
+<swiper-slide>Slide 7</swiper-slide>
+<swiper-slide>Slide 8</swiper-slide>
+</swiper-container>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
-
+<!--cotogry slider end  -->
 
 
 
@@ -69,3 +113,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
