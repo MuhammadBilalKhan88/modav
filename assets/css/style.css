@@ -91,20 +91,11 @@ body {
     width: 100%;
     object-fit: cover;
 }
-.category-img-box a{
-    position: absolute;
+.category-img-box a {
     background-color: var(--primary-color);
     border-radius: 99px;
     padding: 8px 28px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 0;
+    position: relative;
+    bottom: 62px;
+    z-index: 1;
 }
- /* Navbar Styling End */
-/* Bannner Carousel Styling */
-/* Bannner Carousel End */
