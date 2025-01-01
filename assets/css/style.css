@@ -12,6 +12,8 @@
     --primary-color: #ffffff;
     --text-color: #4d4e4f;
     --heading-color: #181818;
+    --black-color: #000;
+    --white-color:#fff;
     --font-light: 100;
     --font-normal: 400;
     --font-500: 500;
@@ -54,13 +56,13 @@ body {
     background-color: var(--primary-color);
  }
  ul.navbar-nav.mx-auto.mb-2.mb-lg-0 {
-    gap: 30px;
+    gap: 35px;
     padding: 0px 0px;
 }
  .navbar-nav .nav-item .nav-link{
 
     color: var(--heading-color);
-    font-size: 16px;
+    font-size: 17px;
     font-weight: var(--font-600);
     transition: all 0.3s ease;
     line-height: 26px;
@@ -74,7 +76,7 @@ body {
 
 #ulicons li a i {
 
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: var(--font-500);
     color: var(--heading-color);
     transition: all 0.3s ease;
@@ -98,4 +100,37 @@ body {
     position: relative;
     bottom: 62px;
     z-index: 1;
+}
+
+
+.banner-inner {
+    position: absolute;
+    width: 100%;
+    text-align: start;
+    bottom: 25px;
+    left: 39px;
+}
+.content-slider p {
+color: var(--white-color);
+text-transform: uppercase;
+
+
+}
+.content-slider h1 {
+    font-size: 3rem;
+    font-weight: var(--font-500);
+    color: var(--white-color);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-size: 80px;
+line-height: 88px;
+}
+.banner-btn a {
+    background-color: var(--white-color);
+    color: var(--heading-color);
+    padding: 14px 28px;
+    border-radius: 99px;
+    font-weight: var(--font-600);
+    transition: all 0.3s ease;
+    font-size: 18px;
 }
