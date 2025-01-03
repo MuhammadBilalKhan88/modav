@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Description" content="Enter your description here" />
+
+
+  <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
+
+
   <!-- Fontawesomw Icon Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -22,7 +27,6 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Title</title>
   <style>
-
     swiper-container {
       width: 100%;
       height: 100%;
@@ -47,6 +51,7 @@
 </head>
 
 <body>
+
 
   <!-- Header Start -->
   <nav class="navbar navbar-expand-lg  py-3 px-5">
@@ -86,13 +91,13 @@
   <!--  autoplay speed="1000" -->
   <!-- Banner Section Start -->
 
-  <section id="banner_scrtuib">
+  <section id="banner_section">
 
-    <swiper-container id="banner_carousel" class="mySwiper" autoplay    space-between="30" pagination="true"
+    <swiper-container id="banner_carousel" class="mySwiper" autoplay space-between="30" pagination="true"
       pagination-clickable="true">
 
       <swiper-slide data-swiper-autoplay="6000">
-        <img src="/assets/Images/Banner_images/banner_2.webp" alt="">
+        <img src="/assets/Images/Banner_images/banner_3.webp" alt="">
 
         <div class="banner-inner px-5">
           <div class="content-slider mb-5">
@@ -101,14 +106,15 @@
 
           </div>
           <div class="banner-btn">
-            <a href="#" class="btn"><span class="mx-2">Explore Collection</span><i
-                class="ri-arrow-right-up-line "></i></a>
+            <a href="#" class="btn">
+              Explore Collection
+            </a>
 
           </div>
         </div>
       </swiper-slide>
 
-      <swiper-slide><img src="/assets/Images/Banner_images/banner_1.webp" alt="">
+      <swiper-slide><img src="/assets/Images/Banner_images/banner_3.webp" alt="">
         <div class="banner-inner px-5">
           <div class="content-slider mb-5">
             <p>BIKINIS & SWIMSUITS</p>
@@ -116,8 +122,9 @@
 
           </div>
           <div class="banner-btn">
-            <a href="#" class="btn"><span class="mx-2">Explore Collection</span><i
-                class="ri-arrow-right-up-line "></i></a>
+            <a href="#" class="btn">
+              Explore Collection
+            </a>
 
           </div>
         </div>
@@ -128,109 +135,152 @@
 
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
-
   <!-- Banner Section End -->
 
-  <!--catogry slider start-->
 
-  <section id="category_section">
+  <!-- Category Section Start -->
+
+  <section id="category_section" class="py-5">
+
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <h1>Categories you might like</h1>
-        </div>
-        <div class="col-md-6 d-flex align-items-center justify-content-end">
-          <a href="#">View All Products</a>
+        <div class="col-md-12 col-sm-12 py-4">
+          <div class="d-flex align-items-center justify-content-between">
+            <h1 class="category_heading">Explore Collections</h1>
+            <a href="#" class="view_all_collection">View All Collection</a>
+          </div>
         </div>
       </div>
+
+
     </div>
-    <div class="container">
+
+    <div class="container-fluid px-5">
+
       <div class="row">
-        <div class="col-md-12">
 
+        <swiper-container class="mySwiper px-5" id="category-slider" autoplay speed="800" init="false">
+          <swiper-slide>
 
-
-          <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="5"
-            space-between="30" free-mode="true">
-            <swiper-slide>
-            
             <div class="category-img-box">
-              <img src="/assets/Images/Categories_images/New_in.webp"   alt="">
-              <a href="#">New in</a>
+              <img src="/assets/Images/Categories_images/New_in.webp" class="img-fluid" alt="">
+              <a href="#">New In</a>
+
             </div>
-
-             </swiper-slide>
-            <swiper-slide>
-            
+          </swiper-slide>
+          <swiper-slide>
             <div class="category-img-box">
-              <img src="/assets/Images/Categories_images/Clothing.webp"   alt="">
-              <a href="#">Clothing</a>
-            </div>
-
-             </swiper-slide>
-            <swiper-slide>
-            
-            <div class="category-img-box">
-              <img src="/assets/Images/Categories_images/Promotion.webp"   alt="">
+              <img src="/assets/Images/Categories_images/Promotion.webp" class="img-fluid" alt="">
               <a href="#">Promotion</a>
             </div>
-
-             </swiper-slide>
-            <swiper-slide>
-            
+          </swiper-slide>
+          <swiper-slide>
             <div class="category-img-box">
-              <img src="/assets/Images/Categories_images/Shoes.webp"   alt="">
-              <a href="#">Shoes</a>
-            </div>
-
-             </swiper-slide>
-            <swiper-slide>
-            
-            <div class="category-img-box">
-              <img src="/assets/Images/Categories_images/Promotion.webp" class="img-fluid"  alt="">
-              <a href="#">Promoiton</a>
-            </div>
-
-             </swiper-slide>
-            <swiper-slide>
-            
-            <div class="category-img-box">
-              <img src="/assets/Images/Categories_images/Bags.webp" class="img-fluid"  alt="">
+              <img src="/assets/Images/Categories_images/Bags.webp" class="img-fluid" alt="">
               <a href="#">Bags</a>
             </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="category-img-box">
+              <img src="/assets/Images/Categories_images/Shoes.webp" class="img-fluid" alt="">
+              <a href="#">Shoes</a>
 
-             </swiper-slide>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="category-img-box">
+              <img src="/assets/Images/Categories_images/Clothing.webp" class="img-fluid" alt="">
+              <a href="#">Clothing</a>
+
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="category-img-box">
+              <img src="/assets/Images/Categories_images/accerioeswebp.webp" class="img-fluid" alt="">
+              <a href="#">Accessories</a>
+
+
+            </div>
+          </swiper-slide>
+
+        </swiper-container>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- Category Section End -->
+
+  <!-- collection Section Start -->
+
+
+  <section id="collection_section" class="py-3">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4  col-sm-12 mb-sm-3  ">
+          <div class="collection_inner">
+            <img src="/assets/Images/collection/capsule1.webp" class="img-fluid capsule_img" alt="">
             
-          </swiper-container>
-
-
-          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
+              <a href="#" class="link">Capsule <br>Collection</a><br>
+              <span>Up to 40% off</span>
+              <a href="#" class="shop-collection-btn">Shop Collection</a>
+    
+          </div>
+        </div>
+        <div class="col-md-4  col-sm-12 mb-sm-3">
+          <div class="collection_inner">
+            <img src="/assets/Images/collection/capsule2.webp" class="img-fluid capsule_img" alt="">
+          </div>
+        </div>
+        <div class="col-md-4  col-sm-12 mb-sm-3">
+          <div class="collection_inner">
+            <img src="/assets/Images/collection/capsule3.webp" class="img-fluid capsule_img" alt="">
+            <a href="#" class="link">Crossbody<br>Bag</a><br>
+            <span>Up to 40% off</span>
+            <a href="#" class="shop-collection-btn">Shop Collection</a>
+          </div>
         </div>
       </div>
     </div>
+
   </section>
-  <!--catogry slider start-->
 
-  <!-- <h1>Explore Collections</h1> -->
-  <!-- <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="4"
-space-between="30" centered-slides="true">
-<swiper-slide>Slide 1</swiper-slide>
-<swiper-slide>Slide 2</swiper-slide>
-<swiper-slide>Slide 3</swiper-slide>
-<swiper-slide>Slide 4</swiper-slide>
-<swiper-slide>Slide 5</swiper-slide>
-<swiper-slide>Slide 6</swiper-slide>
-<swiper-slide>Slide 7</swiper-slide>
-<swiper-slide>Slide 8</swiper-slide>
-</swiper-container>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
-
-  <!--cotogry slider end  -->
+  <!-- collection Section End -->
 
 
+  <!-- Instagram Section Start -->
+
+  <section id="instagram_section" class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 instagram_inner text-center">
+                <h1 class="insta_heading">Shop Instagram</h1>
+                <p class="insta_para">Elevate your wardrobe with fresh finds today!</p>
+            </div>
+        </div>
+
+        <div class="row py-3" >
+            <div class="col-md-3 col-lg-3 col-sm,-12 mb-sm-3 instagram_images p-0 px-2">
+                    <img src="/assets/Images/instagram_images/instagallery1.webp"  class="img-fluid"  alt="">
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm,-12 mb-sm-3 instagram_images p-0 px-2">
+                    <img src="/assets/Images/instagram_images/instagallery2.webp"  class="img-fluid"  alt="">
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm,-12 mb-sm-3 instagram_images p-0 px-2">
+                    <img src="/assets/Images/instagram_images/instagallery3.webp"  class="img-fluid"  alt="">
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm,-12 mb-sm-3 instagram_images p-0 px-2">
+                    <img src="/assets/Images/instagram_images/instagallery4.webp"  class="img-fluid"  alt="">
+            </div>
+            
+        </div>
+
+    </div>
+  </section>
 
 
 
@@ -238,14 +288,7 @@ space-between="30" centered-slides="true">
 
 
 
-
-
-
-
-
-
-
-
+  <!-- Instagram Section End -->
 
 
 </body>
@@ -257,10 +300,36 @@ space-between="30" centered-slides="true">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
 <script>
-  const swiper = new Swiper('.swiper', {
-    autoplay: {
-      delay: 5000,
+  const swiperEl = document.querySelector('#category-slider')
+  Object.assign(swiperEl, {
+    slidesPerView: 1,
+    spaceBetween: 5,
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        // spaceBetween: 20,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        // spaceBetween: 40,
+      },
+      1440: {
+        slidesPerView: 5,
+        spaceBetween: -20,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: -20,
+      },
     },
   });
+  swiperEl.initialize();
 </script>
