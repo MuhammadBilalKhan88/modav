@@ -197,48 +197,73 @@ ul#ulicons {
     line-height: 88px;
 }
 
-.banner-btn a {
-    background-color: var(--white-color);
-    color: var(--heading-color);
-    padding: 14px 28px;
-    border-radius: 99px;
-    font-weight: var(--font-600);
-    transition: all 0.3s ease;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: var(--font-600);
-    text-transform: capitalize;
-    padding: 15px 32px;
-    position: relative;
-    overflow: hidden;
+
+.hbtn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-}
-
-.banner-btn a:hover {
-    color: var(--btn-hover);
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 14px 32px;
+    border-radius: 99px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--black-color);
+    background-color: var(--white-color);
+    white-space: nowrap;
+    z-index: 0;
+    font-weight: var(--font-600);
     transition: all 0.3s ease;
 }
 
-.banner-btn a:hover::after {
+
+
+.bnner-btn::before {
+    position: absolute;
+    content: "";
+    background: var(--black-color);
+    transition-duration: 0.3s;
+    z-index: -1;
+    inset: auto auto 0px 0px;
+    width: 100%;
+    height: 0px;
+    opacity: 1;
+}
+
+
+.bnner-btn:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+
+.bnner-btn:hover {
+    color: var(--white-color);
+    background: var(--black-color);
+    transition: color 0.3s, background 0.3s;
+    transform: translateX(background, 20px);
+}
+
+.bnner-btn:hover::after {
     content: "";
     display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22rgba%28228%2C49%2C49%2C1%29%22%3E%3Cpath%20d%3D%22M16.0037%209.41421L7.39712%2018.0208L5.98291%2016.6066L14.5895%208H7.00373V6H18.0037V17H16.0037V9.41421Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
-    background-size: contain;
+    width: 23px;
+    height: 23px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='rgba(255,255,255,1)'%3E%3Cpath d='M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z'%3E%3C/path%3E%3C/svg%3E");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    top: 1px;
+    top: 6px;
     left: 5px;
     transition: all 0.3s ease;
-
-
+    line-height: 0;
 }
 
 
+/* Navbar Styling End */
 /* Category Section Start */
 #category_section .category_heading {
     font-weight: var(--font-500);
@@ -270,7 +295,27 @@ ul#ulicons {
     width: 84%;
     object-fit: cover;
     border-radius: 20px;
+
 }
+
+.category_img_box_inner{
+    overflow: hidden;
+}
+  
+.category_img_box_inner img {
+    transition: transform .8s ease;
+    border-radius: 20px;
+  }
+  
+  
+.category_img_box_inner:hover img {
+    transform: scale(1.2);
+    height: 100%;
+    width: 84%;
+    object-fit: cover;
+    border-radius: 20px;
+
+  }
 
 
 #category_section .category-img-box a {
@@ -443,7 +488,8 @@ ul#ulicons {
     opacity: 0;
     visibility: hidden;
 }
-.product-cards-btn a:hover{
+
+.product-cards-btn a:hover {
     background-color: var(--black-color);
     color: var(--primary-color);
     font-weight: var(--font-500);
@@ -453,26 +499,28 @@ ul#ulicons {
     transform: translateY(0px);
     opacity: 1;
     visibility: visible;
-    transition-delay: 0.1s; 
+    transition-delay: 0.1s;
 }
 
 
 
-.sizechart{
+.sizechart {
     background-color: #ffffff3b;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-  }
-  .sizechart a{
+}
+
+.sizechart a {
     padding: 5px 10px;
     color: #000;
     text-decoration: none;
     transition: all 0.4s ease-in;
 
-  }
-  .sizechart-inner {
+}
+
+.sizechart-inner {
     position: absolute;
     bottom: 129px;
     background: #fff;
@@ -482,24 +530,26 @@ ul#ulicons {
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s ease-in;
-  }
-  #tab_section_inner .tab_section_inner_box:hover .sizechart-inner{
+}
+
+#tab_section_inner .tab_section_inner_box:hover .sizechart-inner {
     transform: translateY(0px);
     opacity: 1;
     visibility: visible;
-    transition: all 0.4s ease-in ;
-    transition-delay: 0.2s; 
-  }
-  
+    transition: all 0.4s ease-in;
+    transition-delay: 0.2s;
+}
 
-#product-content .product-content-inner .product-title{
+
+#product-content .product-content-inner .product-title {
     font-weight: var(--font-500);
     line-height: 24px;
     font-size: 16px;
     margin-bottom: 10px;
     color: var(--heading-color);
 }
-#product-content .product-content-inner .product-price{
+
+#product-content .product-content-inner .product-price {
     font-weight: var(--font-600);
     line-height: 24px;
     font-size: 16px;
@@ -511,10 +561,6 @@ ul#ulicons {
 
 
 /* Tab Section Styling End */
-
-
-
-
 
 
 /* Capsule Section Styling Start */
@@ -532,6 +578,17 @@ ul#ulicons {
     object-fit: cover;
     border-radius: 20px;
     overflow: hidden;
+}
+
+
+
+.collection_inner img {
+    transition: transform .8s ease;
+}
+
+
+.collection_inner:hover img {
+    transform: scale(1.2);
 }
 
 .collection_inner .link {
@@ -608,6 +665,19 @@ ul#ulicons {
     overflow: hidden;
 }
 
+.instagram_images_inner {
+    overflow: hidden;
+}
+
+.instagram_images_inner img {
+    transition: transform .8s ease;
+}
+
+
+.instagram_images_inner:hover img {
+    transform: scale(1.2);
+}
+
 /* Instagram Section Styling End  */
 
 /* news insight section styling start */
@@ -630,15 +700,23 @@ ul#ulicons {
 
 .insight_images img {
     width: 100%;
-    height: 60%;
     object-fit: cover;
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.3s ease-in-out
+
 }
 
-.insight_images:hover img {
-    transform: scale(1.1);
+.insight_inner_image {
+    overflow: hidden;
+}
+
+.insight_inner_image img {
+    transition: transform .8s ease;
+}
+
+
+.insight_inner_image:hover img {
+    transform: scale(1.2);
 }
 
 .insight_images a h4 {
@@ -651,3 +729,16 @@ ul#ulicons {
 }
 
 /* news insight section styling end*/
+
+
+/* Support Section Styling Start  */
+.icon-box .icon i{
+    color: #000;
+    font-size: 50px;
+}
+
+
+
+
+
+/* Support Section Styling End */
