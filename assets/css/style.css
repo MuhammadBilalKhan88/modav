@@ -27,6 +27,87 @@
     /* Correct font-family for Remix Icons */
 }
 
+/* Keyframes for animations */
+/* Basic Fade-In */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+/* Fade-Out */
+.fade-out {
+    opacity: 1;
+    animation: fadeOut 2s forwards;
+}
+
+/* Fade-Up */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 2s forwards;
+}
+
+/* Fade-Down */
+.fade-down {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeDown 2s forwards;
+}
+
+/* Fade-Left */
+.fade-left {
+    opacity: 0;
+    transform: translateX(20px);
+    animation: fadeLeft 2s forwards;
+}
+
+/* Fade-Right */
+.fade-right {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeRight 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 h1,
 h2,
 h3,
@@ -183,6 +264,7 @@ ul#ulicons {
     border-radius: 15px;
     /* overflow: hidden; */
 }
+
 #category_section .category-img-box img {
     height: 100%;
     width: 84%;
@@ -232,13 +314,206 @@ ul#ulicons {
     margin-right: unset;
     max-width: 100%;
     margin-left: auto;
-   
+
 
 }
 
 
 
 /* Category Section End */
+
+/* Tab Section Styling  Start */
+#myTab {
+    justify-content: center;
+    gap: 33px;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: var(--font-400);
+    border-bottom: 2px solid black;
+    border: none;
+}
+
+/* Remove border for all tabs */
+.nav-tabs .nav-link {
+    border: none !important;
+    border-radius: 0 !important;
+    color: var(--text-color);
+    font-weight: var(--font-400);
+    padding: 0;
+    transition: all 0.1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* Custom style for active tab */
+.nav-tabs .nav-link:hover {
+    border-bottom: 2px solid var(--black-color) !important;
+    padding: 0;
+    color: var(--black-color);
+
+
+}
+
+.nav-tabs .nav-link.active {
+    border: none !important;
+    color: var(--black-color);
+    border-bottom: 2px solid var(--black-color) !important;
+    padding: 0;
+
+}
+
+/* ***Tabs Products Card Styling*** */
+
+.product-image {
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.product-cards-icons #heart-icon {
+    font-size: 20px;
+    height: 38px;
+    width: 38px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    right: 22px;
+    border-radius: 100%;
+    opacity: 0;
+    transform: translate(20px);
+    transition: all 0.2s ease-in;
+}
+
+.product-cards-icons #shopping-bag-icon {
+    font-size: 20px;
+    height: 38px;
+    width: 38px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 65px;
+    right: 22px;
+    opacity: 0;
+    border-radius: 100%;
+    transform: translate(20px);
+    transition: all 0.2s ease-in;
+}
+
+#tab_section_inner .tab_section_inner_box:hover #heart-icon {
+    opacity: 1;
+    transform: translate(0px);
+
+}
+
+#tab_section_inner .tab_section_inner_box:hover #shopping-bag-icon {
+    opacity: 1;
+    transform: translate(0px);
+
+}
+
+.product-cards-btn {
+    /* position: relative; */
+    display: flex;
+    justify-self: center;
+    overflow: hidden;
+}
+
+.product-cards-btn a {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    transition: all 0.4s ease-in;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 175px;
+    margin: 0px 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: var(--font-400);
+    transform: translateY(80px);
+    opacity: 0;
+    visibility: hidden;
+}
+.product-cards-btn a:hover{
+    background-color: var(--black-color);
+    color: var(--primary-color);
+    font-weight: var(--font-500);
+}
+
+#tab_section_inner .tab_section_inner_box:hover .product-cards-btn a {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.1s; 
+}
+
+
+
+.sizechart{
+    background-color: #ffffff3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .sizechart a{
+    padding: 5px 10px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.4s ease-in;
+
+  }
+  .sizechart-inner {
+    position: absolute;
+    bottom: 129px;
+    background: #fff;
+    width: 100%;
+    padding: 5px;
+    transform: translateY(0px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in;
+  }
+  #tab_section_inner .tab_section_inner_box:hover .sizechart-inner{
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.4s ease-in ;
+    transition-delay: 0.2s; 
+  }
+  
+
+#product-content .product-content-inner .product-title{
+    font-weight: var(--font-500);
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--heading-color);
+}
+#product-content .product-content-inner .product-price{
+    font-weight: var(--font-600);
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--heading-color);
+}
+
+/* ***Tabs Products Card Styling*** */
+
+
+/* Tab Section Styling End */
+
+
+
 
 
 
@@ -250,6 +525,7 @@ ul#ulicons {
     overflow: hidden;
     margin-bottom: 30px;
 }
+
 .collection_inner .capsule_img {
     width: 100%;
     height: 100%;
@@ -257,6 +533,7 @@ ul#ulicons {
     border-radius: 20px;
     overflow: hidden;
 }
+
 .collection_inner .link {
     position: absolute;
     top: 29px;
@@ -269,7 +546,8 @@ ul#ulicons {
     font-weight: var(--font-500);
     color: var(--black-color);
 }
-.collection_inner span{
+
+.collection_inner span {
     text-transform: uppercase;
     color: var(--btn-hover);
     position: absolute;
@@ -282,11 +560,13 @@ ul#ulicons {
     font-weight: var(--font-600);
     font-size: 13px;
 }
+
 .collection_inner .link:hover {
     color: var(--btn-hover);
     transition: all 0.3s ease;
 }
-.collection_inner .shop-collection-btn{
+
+.collection_inner .shop-collection-btn {
     font-weight: bolder;
     border: 1px solid var(--black-color);
     border-width: 0px 0px 2px 0px;
@@ -296,13 +576,13 @@ ul#ulicons {
     font-weight: 600;
     position: absolute;
     bottom: 30px;
-    left: 30px;    
+    left: 30px;
 }
 
 /* Capsule Section Styling  End*/
 
 /* Instagram Section Styling Start  */
-.instagram_inner .insta_heading{
+.instagram_inner .insta_heading {
     font-weight: var(--font-500);
     font-size: 40px;
     line-height: 48px;
@@ -310,7 +590,8 @@ ul#ulicons {
     text-rendering: optimizeLegibility;
     color: var(--heading-color);
 }
-.instagram_inner .insta_para{
+
+.instagram_inner .insta_para {
     font-weight: var(--font-400);
     /* font-size: 20px; */
     line-height: 26px;
@@ -318,7 +599,8 @@ ul#ulicons {
     text-rendering: optimizeLegibility;
     color: var(--text-color);
 }
-.instagram_images img{
+
+.instagram_images img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -329,40 +611,43 @@ ul#ulicons {
 /* Instagram Section Styling End  */
 
 /* news insight section styling start */
-.insight_inner .insi_heading{
-font-weight: var(--font-500);
-font-size: 40px;
-line-height: 48px;
-font-family: "Kumbh Sans", sans-serif;
-text-rendering: optimizeLegibility;
-color: var(--heading-color);
-}
-.insight_inner .insi_para{
-font-weight: var(--font-400);
-line-height: 26px;
-font-family: "Kumbh Sans", sans-serif;
-text-rendering: optimizeLegibility;
-color:rgba(0, 0, 0, 0.63);
+.insight_inner .insi_heading {
+    font-weight: var(--font-500);
+    font-size: 40px;
+    line-height: 48px;
+    font-family: "Kumbh Sans", sans-serif;
+    text-rendering: optimizeLegibility;
+    color: var(--heading-color);
 }
 
-.insight_images img{
-width: 100%;
-height: 60%;
-object-fit: cover;
-border-radius: 10px;
-overflow: hidden;
-transition: transform 0.3s ease-in-out
+.insight_inner .insi_para {
+    font-weight: var(--font-400);
+    line-height: 26px;
+    font-family: "Kumbh Sans", sans-serif;
+    text-rendering: optimizeLegibility;
+    color: rgba(0, 0, 0, 0.63);
 }
-.insight_images:hover img{
+
+.insight_images img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out
+}
+
+.insight_images:hover img {
     transform: scale(1.1);
 }
 
-.insight_images a h4{
+.insight_images a h4 {
     font-size: large;
 }
-.insight_images a h4:hover{
-color: #e43131;
-text-decoration: underline;
+
+.insight_images a h4:hover {
+    color: #e43131;
+    text-decoration: underline;
 }
 
-/* news insight section styling end
+/* news insight section styling end*/
