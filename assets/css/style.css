@@ -298,24 +298,23 @@ ul#ulicons {
 
 }
 
-.category_img_box_inner{
+.category_img_box_inner {
     overflow: hidden;
 }
-  
+
 .category_img_box_inner img {
     transition: transform .8s ease;
     border-radius: 20px;
-  }
-  
-  
-.category_img_box_inner:hover img {
-    transform: scale(1.2);
     height: 100%;
-    width: 84%;
+    width: 100%;
     object-fit: cover;
-    border-radius: 20px;
+}
 
-  }
+
+.category_img_box_inner:hover img {
+    transform: scale(1.05);
+
+}
 
 
 #category_section .category-img-box a {
@@ -328,6 +327,7 @@ ul#ulicons {
     right: 22px;
     position: relative;
     bottom: 61px;
+    transition: all 0.4s ease;
 }
 
 
@@ -335,7 +335,8 @@ ul#ulicons {
 #category_section .category-img-box a:hover {
     background-color: #ffffff;
     color: var(--btn-hover);
-    transition: all 0.3s ease;
+    transition: all 0.5s ease-in;
+
 }
 
 #category_section .category-img-box a:hover:after {
@@ -351,6 +352,11 @@ ul#ulicons {
     top: 3px;
     left: 5px;
     fill: #e43131;
+    transition: all 0.5s ease-in;
+    transition-delay: 0.3s;
+
+
+
 
 }
 
@@ -389,6 +395,7 @@ ul#ulicons {
 }
 
 /* Custom style for active tab */
+
 .nav-tabs .nav-link:hover {
     border-bottom: 2px solid var(--black-color) !important;
     padding: 0;
@@ -479,7 +486,7 @@ ul#ulicons {
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 175px;
+    bottom: 170px;
     margin: 0px 30px;
     text-transform: uppercase;
     font-size: 14px;
@@ -513,20 +520,22 @@ ul#ulicons {
 }
 
 .sizechart a {
-    padding: 5px 10px;
+    padding: 5px 4px;
     color: #000;
     text-decoration: none;
     transition: all 0.4s ease-in;
+    font-size: 13px;
+    font-weight: var(--font-500);
 
 }
 
 .sizechart-inner {
     position: absolute;
     bottom: 129px;
-    background: #fff;
+    background: linear-gradient(148.05deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.6) 100%);
     width: 100%;
     padding: 5px;
-    transform: translateY(0px);
+    transform: translateY(100%);
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s ease-in;
@@ -537,7 +546,7 @@ ul#ulicons {
     opacity: 1;
     visibility: visible;
     transition: all 0.4s ease-in;
-    transition-delay: 0.2s;
+    transition-delay: 0.1s;
 }
 
 
@@ -643,8 +652,6 @@ ul#ulicons {
     font-weight: var(--font-500);
     font-size: 40px;
     line-height: 48px;
-    font-family: "Kumbh Sans", sans-serif;
-    text-rendering: optimizeLegibility;
     color: var(--heading-color);
 }
 
@@ -652,18 +659,17 @@ ul#ulicons {
     font-weight: var(--font-400);
     /* font-size: 20px; */
     line-height: 26px;
-    font-family: "Kumbh Sans", sans-serif;
-    text-rendering: optimizeLegibility;
     color: var(--text-color);
 }
 
-.instagram_images img {
-    width: 100%;
+.instagram_images_inner img {
+
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
     overflow: hidden;
 }
+
 
 .instagram_images_inner {
     overflow: hidden;
@@ -677,6 +683,7 @@ ul#ulicons {
 .instagram_images_inner:hover img {
     transform: scale(1.2);
 }
+
 
 /* Instagram Section Styling End  */
 
@@ -703,6 +710,8 @@ ul#ulicons {
     object-fit: cover;
     border-radius: 10px;
     overflow: hidden;
+    border-radius: 20px;
+
 
 }
 
@@ -732,7 +741,7 @@ ul#ulicons {
 
 
 /* Support Section Styling Start  */
-.icon-box .icon i{
+.icon-box .icon i {
     color: #000;
     font-size: 50px;
 }
@@ -742,3 +751,45 @@ ul#ulicons {
 
 
 /* Support Section Styling End */
+
+
+#support_section .container .row .support_inner .support_inner_box .icon_box .icon i {
+    color: #000;
+    font-size: 2.1rem;
+    font-weight: var(--font-400);
+
+}
+
+#support_section .container .row .support_inner .support_inner_box .icon_box .icon_box_heading {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: var(--font-500);
+}
+
+.icon_box_content {
+    padding-top: 12px;
+}
+
+
+
+
+/* 
+    **ABout Us Page Stlying Start**
+*/
+/* .carousel-item{
+    background-image: url("assets/Images/about_us_banner/page-title.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+#inner_page_banner .carousel .carousel-inner .carousel-item .carousel-caption .inner_page_banner_heading {
+    font-weight: var(--font-500);
+    font-size: 2.3rem;
+    line-height: 48px;
+    margin-top: 10px;
+}
+
+
+/* 
+    **ABout Us Page Stlying End**
+*/

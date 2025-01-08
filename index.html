@@ -95,7 +95,7 @@
 
   <section id="banner_section">
 
-    <swiper-container id="banner_carousel" class="mySwiper" autoplay space-between="30" pagination="true"
+    <swiper-container id="banner_carousel" class="mySwiper " autoplay speed="1000" space-between="30" pagination="true"
       pagination-clickable="true">
 
       <swiper-slide data-swiper-autoplay="6000">
@@ -1507,7 +1507,7 @@
 
   <!-- Collection Section Start -->
 
-  <section id="collection_section" class="py-3">
+  <section id="collection_section" class="py-5">
 
     <div class="container">
       <div class="row">
@@ -1544,7 +1544,7 @@
 
   <!-- News Insight Section Start -->
 
-  <section id="insight_section">
+  <section id="insight_section" class="py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-12 insight_inner text-center">
@@ -1554,7 +1554,77 @@
       </div>
 
       <div class="row">
-        <div class="col-md-4 col-lg-4 insight_images mt-4">
+
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="20"
+          slides-per-view="3">
+          <swiper-slide>
+
+            <div class=" insight_images mt-4 text-start">
+              <div class="insight_inner_image">
+                <img src="assets/images/News insight_images/blog-grid-1.webp" class="img-fluid" alt="">
+              </div>
+              <h6 class="text-muted mt-4">13 August</h6>
+              <a class="font-weight-bold" href="#">
+                <h4 class="mt-3">Top 10 Summer Fashion Trends You Can't Miss in 2024</h4>
+              </a>
+              <p>
+              <h6 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. ln sed vulputate massa.</h6>
+              </p>
+            </div>
+
+
+
+
+          </swiper-slide>
+          <swiper-slide>
+
+            <div class=" insight_images mt-4 text-start">
+              <div class="insight_inner_image">
+                <img src="assets/images/News insight_images/blog-grid-8.webp" class="img-fluid" alt="">
+    
+              </div>
+              <h6 class="text-muted mt-4">13 August</h6>
+              <a class="font-weight-bold" href="#">
+                <h4 class="mt-3">Top 10 Summer Fashion Trends You Can't Miss in 2024</h4>
+              </a>
+              <p>
+              <h6 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. ln sed vulputate massa.</h6>
+              </p>
+            </div>
+
+
+
+
+          </swiper-slide>
+          <swiper-slide>
+
+
+            <div class=" insight_images mt-4 text-start">
+              <div class="insight_inner_image">
+                <div class="insight_inner_image">
+                  <img src="assets/images/News insight_images/blog-grid-6.webp" class="img-fluid" alt="">
+                </div>
+              </div>
+              <h6 class="text-muted mt-4">13 August</h6>
+              <a class="font-weight-bold" href="#">
+                <h4 class="mt-3">Top 10 Summer Fashion Trends You Can't Miss in 2024</h4>
+              </a>
+              <p>
+              <h6 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. ln sed vulputate massa.</h6>
+              </p>
+            </div>
+
+
+
+          </swiper-slide>
+
+
+
+        </swiper-container>
+      </div>
+
+      <!-- <div class="row">
+        <div class="col-md-4 col-lg-4 insight_images mt-4 text-start">
           <div class="insight_inner_image">
             <img src="assets/images/News insight_images/blog-grid-1.webp" class="img-fluid" alt="">
           </div>
@@ -1567,7 +1637,7 @@
           </p>
         </div>
 
-        <div class="col-md-4 col-lg-4 insight_images mt-4">
+        <div class="col-md-4 col-lg-4 insight_images mt-4 text-start">
           <div class="insight_inner_image">
             <img src="assets/images/News insight_images/blog-grid-6.webp" class="img-fluid" alt="">
 
@@ -1581,7 +1651,7 @@
           </p>
         </div>
 
-        <div class="col-md-4 col-lg-4 insight_images mt-4">
+        <div class="col-md-4 col-lg-4 insight_images mt-4 text-start">
           <div class="insight_inner_image">
             <div class="insight_inner_image">
               <img src="assets/images/News insight_images/blog-grid-1.webp" class="img-fluid" alt="">
@@ -1595,7 +1665,7 @@
           <h6 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. ln sed vulputate massa.</h6>
           </p>
         </div>
-      </div>
+      </div> -->
 
 
     </div>
@@ -1608,36 +1678,70 @@
 
 
   <!-- Instagram Section Start -->
-  <section id="instagram_section" class="py-4">
+  <section id="instagram_section" class="py-5">
     <div class="container">
-      <div class="row">
+      <div class="row mb-3">
         <div class="col-md-12 instagram_inner text-center">
           <h1 class="insta_heading">Shop Instagram</h1>
           <p class="insta_para">Elevate your wardrobe with fresh finds today!</p>
         </div>
       </div>
 
-      <div class="row py-4">
-        <div class="col-md-3 col-lg-3 col-sm,-12 mb-sm-3 instagram_images p-0 px-2 mb-sm-3">
+      <swiper-container class="mySwiper" space-between="20" slides-per-view="5">
+        <swiper-slide>
+          <div class="instagram_images_inner">
+            <img src="/assets/Images/instagram_images/instagallery1.webp" class="img-fluid" alt="">
+
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="instagram_images_inner">
+            <img src="/assets/Images/instagram_images/instagallery2.webp" class="img-fluid" alt="">
+
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="instagram_images_inner">
+            <img src="/assets/Images/instagram_images/instagallery3.webp" class="img-fluid" alt="">
+
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="instagram_images_inner">
+            <img src="/assets/Images/instagram_images/instagallery4.webp" class="img-fluid" alt="">
+
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="instagram_images_inner">
+            <img src="/assets/Images/instagram_images/instagallery5.webp" class="img-fluid" alt="">
+
+          </div>
+        </swiper-slide>
+
+      </swiper-container>
+
+      <!-- <div class="row py-4">
+        <div class="col-md-3 col-lg-3 col-sm-12 mb-sm-3 instagram_images p-0  mb-sm-3">
           <div class="instagram_images_inner">
             <img src="/assets/Images/instagram_images/instagallery1.webp" class="img-fluid" alt="">
 
           </div>
         </div>
-        <div class="col-md-3 col-lg-3 col-sm,-12 mb-sm-3 instagram_images p-0 px-2 mb-sm-3">
+        <div class="col-md-3 col-lg-3 col-sm-12 mb-sm-3 instagram_images p-0  mb-sm-3">
           <div class="instagram_images_inner">
 
-            <img src="/assets/Images/instagram_images/instagallery2.webp" class="img mb-sm-3-fluid" alt="">
+            <img src="/assets/Images/instagram_images/instagallery2.webp" class="img-fluid" alt="">
 
           </div>
         </div>
-        <div class="col-md-3 col-lg-3 col-sm,-12 mb-sm-3 instagram_images p-0 px-2 mb-sm-3">
+        <div class="col-md-3 col-lg-3 col-sm-12 mb-sm-3 instagram_images p-0  mb-sm-3">
           <div class="instagram_images_inner">
             <img src="/assets/Images/instagram_images/instagallery3.webp" class="img-fluid" alt="">
 
           </div>
         </div>
-        <div class="col-md-3 col-lg-3 col-sm,-12 mb-sm-3 instagram_images p-0 px-2 mb-sm-3">
+        <div class="col-md-3 col-lg-3 col-sm-12 mb-sm-3 instagram_images p-0  mb-sm-3">
           <div class="instagram_images_inner">
             <div class="instagram_images_inner">
               <img src="/assets/Images/instagram_images/instagallery1.webp" class="img-fluid" alt="">
@@ -1647,7 +1751,8 @@
           </div>
         </div>
 
-      </div>
+
+      </div> -->
 
     </div>
   </section>
@@ -1657,30 +1762,64 @@
 
 
   <!-- Support Section Styling Start -->
-  <section id="support_section">
+  <section id="support_section" class="py-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 support_inner d-flex justify-content-center align-items-center">
-          <div class="support_inner_box">
+        <div class="col-md-6 support_inner d-flex justify-content-between">
+          <div class="support_inner_box ">
             <div class="icon_box text-center">
-             
-                <div class="icon">
-                  <i class="ri-arrow-go-back-line" style="color: #000;"></i>
-                </div>
-             
-              <p>Lorem ipsum dolor sit amet</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi adipisci nisi laborum cupiditate.</p>
+
+              <div class="icon">
+                <i class="ri-arrow-go-back-line"></i>
+              </div>
+              <div class="icon_box_content">
+                <h5 class="icon_box_heading">14-Day Returns</h5>
+                <p class="icon_box_para text-secondary">Risk-free shopping with easy returns.</p>
+              </div>
             </div>
           </div>
-         
+          <div class="support_inner_box">
+            <div class="icon_box text-center">
+
+              <div class="icon">
+                <i class="ri-truck-line"></i>
+              </div>
+              <div class="icon_box_content">
+                <h5 class="icon_box_heading">Free Shipping</h5>
+                <p class="icon_box_para text-secondary">No extra costs, just the price you see.</p>
+              </div>
+            </div>
+          </div>
         </div>
-   
+        <div class="col-md-6 support_inner d-flex justify-content-between  ">
+          <div class="support_inner_box ">
+            <div class="icon_box text-center">
+
+              <div class="icon">
+                <i class="ri-customer-service-line"></i>
+              </div>
+              <div class="icon_box_content">
+                <h5 class="icon_box_heading">24/7 Support</h5>
+                <p class="icon_box_para text-secondary">24/7 support, always here just for you</p>
+              </div>
+            </div>
+          </div>
+          <div class="support_inner_box">
+            <div class="icon_box text-center">
+
+              <div class="icon">
+                <i class="ri-verified-badge-line"></i>
+              </div>
+              <div class="icon_box_content ">
+                <h5 class="icon_box_heading">Member Discounts</h5>
+                <p class="icon_box_para text-secondary">Special prices for our loyal customers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-
-
-
-
   </section>
 
 
