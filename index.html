@@ -25,6 +25,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Swiper Js Link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
   <!-- Custom Link Css -->
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Title</title>
@@ -49,7 +52,29 @@
       height: 100%;
       object-fit: cover;
     }
-  </style>
+  
+    /* customer slide section css */
+    .swiper {
+  width: 80%;
+  /*padding: 20px 0;*/
+/*height: auto;*/
+}
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+
+
+
+
+  
+</style>
 </head>
 
 <body>
@@ -1541,7 +1566,75 @@
 
   <!-- Collection Section End -->
 
+  <!-- Customer Section Start -->
 
+  <section class="testimonials">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12 customer_inner text-center">
+    <h1 class="cust_heading">Customer Say!</h1>
+    <p class="cust_para mt-3">Our customers adore our products, and we constantly aim to delight them.</p>
+    </div>
+    </div>
+
+    <div>
+
+      <!-- Swiper slider -->
+<div class="swiper mySwiper">
+<div class="swiper-wrapper justify-content-between">
+
+  <!-- Testimonial 1 -->
+<div class="swiper-slide testimonial">
+<div class="top-right-text">New</div>
+  <img src="assets/Images/Customer_images/tes-1.webp" alt="customer 1" class="customer-img mb-4">
+<p>★★★★★</p>
+<h3>Sybil Sharp</h3>
+<p>
+  "Fantastic shop! Great selection, fair prices, and friendly staff."
+</p>
+<p><strong>Contrasting sheepskin sweatshirt - $60.00</strong></p>
+</div>
+
+<!-- Testimonial 2 -->
+<div class="swiper-slide testimonial">
+<div class="top-right-text">Sale</div>
+  <img src="assets/Images/Customer_images/tes-2.webp" alt="customer 2" class="customer-img mb-4">
+<p>★★★★★</p>
+<h3>Mark G.</h3>
+<p>
+  "I absolutely love this shop! The products are high-quality and the
+  customer service is excellent."
+</p>
+<p><strong>Contrasting sheepskin sweatshirt - $60.00</strong></p>
+</div>
+
+<!-- Add more testimonials as needded -->
+</div>
+
+<!-- Pagination -->
+<div class="pagination">
+  <span class="dot active" data-slide="1"></span>
+  <span class="dot" data-slide="2"></span>
+  <span class="dot" data-slide="3"></span>
+</div>
+</div>
+  
+</div>
+
+  </div>
+    
+   
+    
+    
+      
+    </section>
+    
+    
+
+  
+  
+  <!-- Customer Section End -->
+  
   <!-- News Insight Section Start -->
 
   <section id="insight_section" class="py-5">
@@ -1879,4 +1972,12 @@
     },
   });
   swiperEl.initialize();
+
+
+
+
+/* customer slide section script */ 
+
+
+
 </script>

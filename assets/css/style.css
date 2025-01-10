@@ -687,6 +687,76 @@ ul#ulicons {
 
 /* Instagram Section Styling End  */
 
+/* Customer section styling start */
+
+.customer_inner .cust_heading {
+    font-weight: var(--font-500);
+    font-size: 40px;
+    line-height: 48px;
+    font-family: "Kumbh Sans", sans-serif;
+}
+.customer_inner .cust_para {
+    color: rgba(0, 0, 0, 0.63);
+    font-weight: var(--font-400);
+    line-height: 26px;
+    font-family: "Kumbh Sans", sans-serif;
+}
+.testimonials {
+    text-align: center;
+    padding: 20px;
+position: relative;  
+border-radius: 10px;
+background-color: #fff;
+}
+.testimonial .top-right-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff5722;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 0 0 0 10px;
+    text-transform: uppercase;
+z-index: 10;  
+}  
+  .customer-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+margin-bottom: 10px;  
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #333;
+  }
+  
+   
+  
+
+/* Customer section styling end */
+
+
+
 /* news insight section styling start */
 .insight_inner .insi_heading {
     font-weight: var(--font-500);
