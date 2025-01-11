@@ -26,8 +26,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Swiper Js Link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <!-- Custom Link Css -->
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Title</title>
@@ -52,29 +52,24 @@
       height: 100%;
       object-fit: cover;
     }
-  
+
     /* customer slide section css */
     .swiper {
-  width: 80%;
-  /*padding: 20px 0;*/
-/*height: auto;*/
-}
-.swiper-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: white;
-  padding: 20px;
-  max-width: 300px;
-  text-align: center;
-}
+      width: 80%;
+      /*padding: 20px 0;*/
+      /*height: auto;*/
+    }
 
-
-
-
-
-  
-</style>
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      padding: 20px;
+      max-width: 300px;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
@@ -1568,73 +1563,372 @@
 
   <!-- Customer Section Start -->
 
-  <section class="testimonials">
+  <!-- <section class="testimonials">
     <div class="container">
-    <div class="row">
-    <div class="col-md-12 customer_inner text-center">
-    <h1 class="cust_heading">Customer Say!</h1>
-    <p class="cust_para mt-3">Our customers adore our products, and we constantly aim to delight them.</p>
+      <div class="row">
+        <div class="col-md-12 customer_inner text-center">
+          <h1 class="cust_heading">Customer Say!</h1>
+          <p class="cust_para mt-3">Our customers adore our products, and we constantly aim to delight them.</p>
+        </div>
+      </div>
+
+      <div>
+
+        Swiper slider
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper justify-content-between">
+
+            Testimonial 1
+            <div class="swiper-slide testimonial">
+              <div class="top-right-text">New</div>
+              <img src="assets/Images/Customer_images/tes-1.webp" alt="customer 1" class="customer-img mb-4">
+              <p>★★★★★</p>
+              <h3>Sybil Sharp</h3>
+              <p>
+                "Fantastic shop! Great selection, fair prices, and friendly staff."
+              </p>
+              <p><strong>Contrasting sheepskin sweatshirt - $60.00</strong></p>
+            </div>
+
+            Testimonial 2
+            <div class="swiper-slide testimonial">
+              <div class="top-right-text">Sale</div>
+              <img src="assets/Images/Customer_images/tes-2.webp" alt="customer 2" class="customer-img mb-4">
+              <p>★★★★★</p>
+              <h3>Mark G.</h3>
+              <p>
+                "I absolutely love this shop! The products are high-quality and the
+                customer service is excellent."
+              </p>
+              <p><strong>Contrasting sheepskin sweatshirt - $60.00</strong></p>
+            </div>
+
+            Add more testimonials as needded
+          </div>
+
+          Pagination
+          <div class="pagination">
+            <span class="dot active" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+          </div>
+        </div>
+
+      </div>
+
     </div>
+
+
+
+
+
+  </section> -->
+
+
+  <section id="customer_section ">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 customer_inner text-center">
+          <h1 class="customer_heading">Customer Say!</h1>
+          <p class="customer_para mt-3">Our customers adore our products, and we constantly aim to delight them.</p>
+        </div>
+      </div>
+      <div class="row">
+
+
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="2"
+          space-between="20">
+
+          <swiper-slide>
+
+            <div id="testimonial-item">
+              <div class="testimonial-img">
+                <img src="assets/Images/Customer_images/tes-1.webp" alt="">
+              </div>
+
+              <div class="testimonial_content text-start">
+                <div class="content-top">
+                  <div class="list-star">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                  </div>
+                  <div class="text-secondary">
+                    <p>"Fantastic shop! Great selection, fair prices, and friendly staff. Highly recommended. The
+                      quality
+                      of the products is exceptional, and the prices are very reasonable!"</p>
+                  </div>
+                  <div class="box-author">
+                    <div class="author-title">
+                      <p><span class="mx-2">Sybil Sharp</span> <i class="ri-checkbox-circle-line"></i></p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="box-avt">
+                  <div class="avatar avt-60 rounded">
+                    <img src="assets/Images/Customer_images/user-4.jpg" alt="">
+                  </div>
+                  <div class="price-box">
+                    <p>Contrasting sheepskin sweatshirt
+                      <br>
+                      <sapn class="price">$60.00</span>
+                    </p>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <style>
+
+            </style>
+
+
+
+          </swiper-slide>
+
+          <swiper-slide>
+
+            <div id="testimonial-item">
+              <div class="testimonial-img">
+                <img src="assets/Images/Customer_images/tes-1.webp" alt="">
+              </div>
+
+              <div class="testimonial_content text-start">
+                <div class="content-top">
+                  <div class="list-star">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                  </div>
+                  <div class="text-secondary">
+                    <p>"Fantastic shop! Great selection, fair prices, and friendly staff. Highly recommended. The
+                      quality
+                      of the products is exceptional, and the prices are very reasonable!"</p>
+                  </div>
+                  <div class="box-author">
+                    <div class="author-title">
+                      <p><span class="mx-2">Sybil Sharp</span> <i class="ri-checkbox-circle-line"></i></p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="box-avt">
+                  <div class="avatar avt-60 rounded">
+                    <img src="assets/Images/Customer_images/user-4.jpg" alt="">
+                  </div>
+                  <div class="price-box">
+                    <p>Contrasting sheepskin sweatshirt
+                      <br>
+                      <sapn class="price">$60.00</span>
+                    </p>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <style>
+
+            </style>
+
+
+
+          </swiper-slide>
+
+          <swiper-slide>
+
+            <div id="testimonial-item">
+              <div class="testimonial-img">
+                <img src="assets/Images/Customer_images/tes-1.webp" alt="">
+              </div>
+
+              <div class="testimonial_content text-start">
+                <div class="content-top">
+                  <div class="list-star">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                  </div>
+                  <div class="text-secondary">
+                    <p>"Fantastic shop! Great selection, fair prices, and friendly staff. Highly recommended. The
+                      quality
+                      of the products is exceptional, and the prices are very reasonable!"</p>
+                  </div>
+                  <div class="box-author">
+                    <div class="author-title">
+                      <p><span class="mx-2">Sybil Sharp</span> <i class="ri-checkbox-circle-line"></i></p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="box-avt">
+                  <div class="avatar avt-60 rounded">
+                    <img src="assets/Images/Customer_images/user-4.jpg" alt="">
+                  </div>
+                  <div class="price-box">
+                    <p>Contrasting sheepskin sweatshirt
+                      <br>
+                      <sapn class="price">$60.00</span>
+                    </p>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <style>
+
+            </style>
+
+
+
+          </swiper-slide>
+
+          <swiper-slide>
+
+            <div id="testimonial-item">
+              <div class="testimonial-img">
+                <img src="assets/Images/Customer_images/tes-1.webp" alt="">
+              </div>
+
+              <div class="testimonial_content text-start">
+                <div class="content-top">
+                  <div class="list-star">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                  </div>
+                  <div class="text-secondary">
+                    <p>"Fantastic shop! Great selection, fair prices, and friendly staff. Highly recommended. The
+                      quality
+                      of the products is exceptional, and the prices are very reasonable!"</p>
+                  </div>
+                  <div class="box-author">
+                    <div class="author-title">
+                      <p><span class="mx-2">Sybil Sharp</span> <i class="ri-checkbox-circle-line"></i></p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="box-avt">
+                  <div class="avatar avt-60 rounded">
+                    <img src="assets/Images/Customer_images/user-4.jpg" alt="">
+                  </div>
+                  <div class="price-box">
+                    <p>Contrasting sheepskin sweatshirt
+                      <br>
+                      <sapn class="price">$60.00</span>
+                    </p>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <style>
+
+            </style>
+
+
+
+          </swiper-slide>
+
+          <swiper-slide>
+
+            <div id="testimonial-item">
+              <div class="testimonial-img">
+                <img src="assets/Images/Customer_images/tes-1.webp" alt="">
+              </div>
+
+              <div class="testimonial_content text-start">
+                <div class="content-top">
+                  <div class="list-star">
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                  </div>
+                  <div class="text-secondary">
+                    <p>"Fantastic shop! Great selection, fair prices, and friendly staff. Highly recommended. The
+                      quality
+                      of the products is exceptional, and the prices are very reasonable!"</p>
+                  </div>
+                  <div class="box-author">
+                    <div class="author-title">
+                      <p><span class="mx-2">Sybil Sharp</span> <i class="ri-checkbox-circle-line"></i></p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="box-avt">
+                  <div class="avatar avt-60 rounded">
+                    <img src="assets/Images/Customer_images/user-4.jpg" alt="">
+                  </div>
+                  <div class="price-box">
+                    <p>Contrasting sheepskin sweatshirt
+                      <br>
+                      <sapn class="price">$60.00</span>
+                    </p>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <style>
+
+            </style>
+
+
+
+          </swiper-slide>
+
+
+
+
+
+        </swiper-container>
+
+
+      </div>
     </div>
 
-    <div>
 
-      <!-- Swiper slider -->
-<div class="swiper mySwiper">
-<div class="swiper-wrapper justify-content-between">
 
-  <!-- Testimonial 1 -->
-<div class="swiper-slide testimonial">
-<div class="top-right-text">New</div>
-  <img src="assets/Images/Customer_images/tes-1.webp" alt="customer 1" class="customer-img mb-4">
-<p>★★★★★</p>
-<h3>Sybil Sharp</h3>
-<p>
-  "Fantastic shop! Great selection, fair prices, and friendly staff."
-</p>
-<p><strong>Contrasting sheepskin sweatshirt - $60.00</strong></p>
-</div>
 
-<!-- Testimonial 2 -->
-<div class="swiper-slide testimonial">
-<div class="top-right-text">Sale</div>
-  <img src="assets/Images/Customer_images/tes-2.webp" alt="customer 2" class="customer-img mb-4">
-<p>★★★★★</p>
-<h3>Mark G.</h3>
-<p>
-  "I absolutely love this shop! The products are high-quality and the
-  customer service is excellent."
-</p>
-<p><strong>Contrasting sheepskin sweatshirt - $60.00</strong></p>
-</div>
 
-<!-- Add more testimonials as needded -->
-</div>
 
-<!-- Pagination -->
-<div class="pagination">
-  <span class="dot active" data-slide="1"></span>
-  <span class="dot" data-slide="2"></span>
-  <span class="dot" data-slide="3"></span>
-</div>
-</div>
-  
-</div>
+  </section>
 
-  </div>
-    
-   
-    
-    
-      
-    </section>
-    
-    
 
-  
-  
+
+
+
+
   <!-- Customer Section End -->
-  
+
   <!-- News Insight Section Start -->
 
   <section id="insight_section" class="py-5">
@@ -1661,7 +1955,8 @@
                 <h4 class="mt-3">Top 10 Summer Fashion Trends You Can't Miss in 2024</h4>
               </a>
               <p>
-              <h6 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. ln sed vulputate massa.</h6>
+              <h6 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. ln sed vulputate massa.
+              </h6>
               </p>
             </div>
 
@@ -1674,14 +1969,15 @@
             <div class=" insight_images mt-4 text-start">
               <div class="insight_inner_image">
                 <img src="assets/images/News insight_images/blog-grid-8.webp" class="img-fluid" alt="">
-    
+
               </div>
               <h6 class="text-muted mt-4">13 August</h6>
               <a class="font-weight-bold" href="#">
                 <h4 class="mt-3">Top 10 Summer Fashion Trends You Can't Miss in 2024</h4>
               </a>
               <p>
-              <h6 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. ln sed vulputate massa.</h6>
+              <h6 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. ln sed vulputate massa.
+              </h6>
               </p>
             </div>
 
@@ -1703,7 +1999,8 @@
                 <h4 class="mt-3">Top 10 Summer Fashion Trends You Can't Miss in 2024</h4>
               </a>
               <p>
-              <h6 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. ln sed vulputate massa.</h6>
+              <h6 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. ln sed vulputate massa.
+              </h6>
               </p>
             </div>
 
@@ -1976,7 +2273,7 @@
 
 
 
-/* customer slide section script */ 
+  /* customer slide section script */
 
 
 
